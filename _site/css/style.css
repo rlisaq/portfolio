@@ -1,0 +1,101 @@
+/*--- Table of Contents
+CSS Reset
+Universal
+Typography
+Header
+About Me
+My Skills
+Map
+Experience
+Contact
+
+*/
+
+/*--- CSS Reset ---*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*border: 1px solid green;*/
+}
+
+[class*=grid] {
+  margin: 0;
+}
+
+/*Universal*/
+body {
+  font-size: 1rem;
+  color: #33375;
+  font-family: 'Lato', sans-serif;
+}
+
+section, footer{
+  padding: 10vh 10vw;
+}
+
+.no-padding{
+  padding: 0;
+}
+
+.center{
+  text-align: center;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: teal;
+}
+
+/*featured styling*/
+.featured {
+  background-color: #3CBBB1;
+}
+.featured .featured-box{
+  background-color: #fff;
+  padding:10vh 10vw;
+}
+
+.experiences .fa {
+  font-size: 3rem;
+}
+
+/*Typography*/
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+/*Header*/
+.top-banner {
+  background-image: url("../images/giphy.gif");
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+
+/*About Me*/
+
+
+/*My Skills*/
+
+/*Map*/
+
+/*Experience*/
+
+
+/*Contact*/
+footer, footer a {
+  color: white;
+}

@@ -1,28 +1,29 @@
----
-layout: default
-skills:
-  - icon: table
-    title: Event Planning
-    desc: Events big and small
-  - icon: pencil
-    title: Layout Design
-    desc: InDesign, Canva
-  - icon: book
-    title: Publishing Sales
-    desc: MFNERC Publishing
-  - icon: code
-    title: Web Development
-    desc: Website Creation
-  - icon: twitter
-    title: Digital Engagement
-    desc: Instagram, Twitter, Blog
-  - icon: print
-    title: Print Production
-    desc: Printers, Cutters, Booklet Creation
+<!DOCTYPE html>
+<html>
 
----
+  <head>
+    <!-- START head element -->
 
-<!-- This is the body of my homepage and all content will go here -->
+    <title>Randi-Lisas portfolio site</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1>"
+
+    <!-- Google Fonts -->
+  <link <link href="https://fonts.googleapis.com/css?family=Lato|Nunito" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <!-- gridlex -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.2.4/gridlex.min.css">
+
+    <!-- This is my main css fil, keep at bottom -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- END head element -->
+  </head>
+
+  <body>
+    <!-- This is the body of my homepage and all content will go here -->
     <section class="top-banner center">
       <header class="grid">
         <div class="col-6">
@@ -53,18 +54,62 @@ skills:
     <section class="grid" id="skills">
       <h2 class="col-12"> My Skills</h2>
 
-      {% for skill in page.skills %}
+      
 
       <div class="col-4_md-6_sm-12">
-        <i class="fa fa-{{ skill.icon}}" aria-hidden="true"></i>
-        <h3>{{ skill.title}}</h3>
-        <p>{{ skill.desc}}</p>
+        <i class="fa fa-table" aria-hidden="true"></i>
+        <h3>Event Planning</h3>
+        <p>Events big and small</p>
       </div>
 
-      {% endfor %}
+      
+
+      <div class="col-4_md-6_sm-12">
+        <i class="fa fa-pencil" aria-hidden="true"></i>
+        <h3>Layout Design</h3>
+        <p>InDesign, Canva</p>
+      </div>
+
+      
+
+      <div class="col-4_md-6_sm-12">
+        <i class="fa fa-book" aria-hidden="true"></i>
+        <h3>Publishing Sales</h3>
+        <p>MFNERC Publishing</p>
+      </div>
+
+      
+
+      <div class="col-4_md-6_sm-12">
+        <i class="fa fa-code" aria-hidden="true"></i>
+        <h3>Web Development</h3>
+        <p>Website Creation</p>
+      </div>
+
+      
+
+      <div class="col-4_md-6_sm-12">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <h3>Digital Engagement</h3>
+        <p>Instagram, Twitter, Blog</p>
+      </div>
+
+      
+
+      <div class="col-4_md-6_sm-12">
+        <i class="fa fa-print" aria-hidden="true"></i>
+        <h3>Print Production</h3>
+        <p>Printers, Cutters, Booklet Creation</p>
+      </div>
+
+      
     </section>
 
-    {% include map.html %}
+    <section class="no-padding">
+  <!-- Map from Google -->
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10287.791960599441!2d-97.23137161727476!3d49.86222161875707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea74bc727ad3b1%3A0x7399da6e0b752c0e!2sTuxedo%2C+Winnipeg%2C+MB%2C+Canada!5e0!3m2!1sen!2sid!4v1488524625344" width="100%" height="450" frameborder="0" style="border:0; pointer-events:none" allowfullscreen></iframe>
+</section>
+
 
      <section id="experience" class="experiences">
       <!--Section for my Experience  -->
@@ -125,3 +170,7 @@ skills:
       </nav>
 
     </footer>
+
+  </body>
+
+</html>
